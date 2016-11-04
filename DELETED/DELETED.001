@@ -1,0 +1,25 @@
+TITLE	template.asm
+
+; Author: Emily Sears
+; Last update: July 7, 2016
+;
+; This program illustrates how to write a program of 
+; one procedure, calling another procedure from the 
+; Irvine library.
+
+INCLUDE Irvine16.inc
+.8086
+.data
+
+.code
+main PROC
+	mov ax,@data	; set up the
+	mov ds,ax	; data segment register
+
+	call dumpregs
+
+
+	mov ax, 4C00h	; DOS function 4C exits
+	int 21h		; DOS interrupt.
+main ENDP
+END main

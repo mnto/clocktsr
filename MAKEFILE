@@ -1,0 +1,13 @@
+all: clocktsr.com clock.exe
+
+clocktsr.com: clocktsr.asm
+   ml /Fl clocktsr.asm
+
+clock.exe: clock.asm
+   ml /Fl clock.asm irvine16.lib
+
+clean:
+   del *.com
+   del *.exe
+   del *.lst
+   del *.obj
