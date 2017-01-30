@@ -1,0 +1,3 @@
+This is a small model program written in assembly language for the 8086 machine
+that continuously updates a real-time clock (hours, minutes, seconds) in the upper right corner of the screen
+for as long as the program is running. 
