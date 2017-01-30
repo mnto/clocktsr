@@ -1,3 +1,10 @@
-This is a small model program written in assembly language for the 8086 machine
+This repository includes 2 main programs:
+
+The first one is CLOCK.ASM. This is a small model program written in assembly language for the 8086 machine
 that continuously updates a real-time clock (hours, minutes, seconds) in the upper right corner of the screen
 for as long as the program is running. 
+
+The second one is CLOCKTSR.ASM. This functions the same way as CLOCK.ASM but is a tiny model. 
+A resident routine is installed so that the clock is updated continuously until the machine is rebooted.
+
+Both programs work so that  pressing both shift keys toggles the clock display on and off.
